@@ -1,0 +1,139 @@
+body {
+  background-color: #f2efe4;
+  text-align: center;
+}
+footer {
+  margin-top: 350px;
+}
+
+h2,
+h3,
+h4,
+h5,
+footer,
+p,
+label {
+  color: #402d1c;
+  font-family: montserrat;
+}
+h1 {
+  font-family: petit;
+  font-size: 3em;
+  color: #402d1c;
+}
+
+#omvendt_r {
+  color: #497cbf;
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  color: #402d1c;
+  font-family: montserrat;
+}
+a:link {
+  text-decoration: none;
+}
+
+.grid_articals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+.grid_articals article {
+  display: grid;
+  grid-template-columns: subgrid;
+}
+.grid_articals img {
+  max-width: 80%;
+}
+
+.product_container,
+.tee,
+.bag,
+.jacket,
+.leggings_produkt,
+p {
+  text-align: left;
+}
+.produkt_billede img {
+  max-width: 70%;
+}
+.grid_main {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.grid_text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* Tilføj til kurv funktion */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.tilfoj_til_kurv {
+  width: 100%;
+  padding: 10px;
+  background-color: #497cbf;
+  color: #f2efe4;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.tilfoj_til_kurv:hover {
+  background-color: #402d1c;
+}
+.grid_kategorier a {
+  border: solid #497cbf;
+  border-radius: 1rem;
+  background-color: #497cbf;
+}
+.discount_hidden {
+  visibility: hidden;
+  margin: 0;
+  border: solid red;
+}
+.discount {
+  visibility: visible;
+}
+.soldout_hidden {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.soldout {
+  visibility: visible;
+  margin: 0;
+  background-color: lightgray;
+  padding: 10px;
+}
+.product_container {
+  position: relative;
+}
+
+@media (width > 750px) {
+  .grid_kategorier {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .grid_kategorier li {
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+  .produkt_billede {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
