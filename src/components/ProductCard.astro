@@ -14,7 +14,7 @@ const { data } = Astro.props;
   <p>Now DKK {Math.round(data.price - data.price*data.discount/100)},-</p>
   <p>{data.discount}%</p>
   }
-  <a href="product.html">Read More</a>
+  <a href={`../product/${data.id}`}>Read More</a>
 </article>
 
 <style>
